@@ -2,6 +2,7 @@ import streamlit as st
 import spacy
 
 try:
+    spacy.cli.download("en_core_web_lg")
     nlp = spacy.load("en_core_web_lg")
 except OSError:
     spacy.cli.download("en_core_web_lg")
