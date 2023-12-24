@@ -1,4 +1,11 @@
 import streamlit as st
+import spacy
+
+try:
+    nlp = spacy.load("en_core_web_lg")
+except OSError:
+    spacy.cli.download("en_core_web_lg")
+
 
 st.write('Hello World!!!')
 st.write('update here')
