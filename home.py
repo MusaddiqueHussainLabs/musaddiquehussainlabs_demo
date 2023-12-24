@@ -2,10 +2,10 @@ import streamlit as st
 import spacy
 
 try:
-    spacy.cli.download("en_core_web_lg")
-    nlp = spacy.load("en_core_web_lg")
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 except OSError:
-    spacy.cli.download("en_core_web_lg")
+    spacy.cli.download("en_core_web_sm")
 
 
 st.write('Hello World!!!')
