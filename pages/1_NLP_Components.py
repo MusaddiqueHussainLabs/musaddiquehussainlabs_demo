@@ -3,9 +3,9 @@ from musaddiquehussainlabs.nlp_components import nlp
 import spacy
 
 try:
-    nlp = spacy.load("en_core_web_lg")
+    nlp = spacy.load("en_core_web_sm")
 except OSError:
-    spacy.cli.download("en_core_web_lg")
+    spacy.cli.download("en_core_web_sm")
 
 st.write('The `nlp_components` module comprises essential tools for text analysis: tokenization for breaking text into units, part-of-speech tagging for grammatical labeling, and named entity recognition to identify entities like names or locations. These functions collectively enable in-depth linguistic analysis, facilitating tasks such as syntax parsing, entity categorization, and text structure comprehension within natural language processing workflows.')
 
