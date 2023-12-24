@@ -1,2 +1,3 @@
+pip
 musaddiquehussainlabs
 en_core_web_lg
