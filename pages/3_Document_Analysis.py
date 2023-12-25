@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 import streamlit as st
 from musaddiquehussainlabs.document_analysis import DocumentAnalysis
 
-st.secrets["GOOGLE_API_KEY"]
+# st.secrets["GOOGLE_API_KEY"]
 
 class DocumentAnalysisConstants(BaseSettings):
 
