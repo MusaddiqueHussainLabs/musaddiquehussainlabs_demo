@@ -1,8 +1,7 @@
 import streamlit as st
 from musaddiquehussainlabs.nlp_components import nlp
 
-st.write('The `nlp_components` module comprises essential tools for text analysis: tokenization for breaking text into units, part-of-speech tagging for grammatical labeling, and named entity recognition to identify entities like names or locations. These functions collectively enable in-depth linguistic analysis, facilitating tasks such as syntax parsing, entity categorization, and text structure comprehension within natural language processing workflows.')
-
+st.subheader('NLP Tasks', divider='rainbow')
 option = st.selectbox(
     'Please select component type',
     ('tokenize','pos', 'lemma', 'morphology','dep', 'ner', 'norm'))
