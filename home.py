@@ -1,21 +1,27 @@
 import streamlit as st
 
-st.write('Hello World!!!')
-st.write('update here')
+st.set_page_config(
+    page_title="MusaddiqueHussain LABS",
+    layout="wide"
+)
 
-option = st.selectbox(
-    'Please select component type',
-    ('ner', 'pos', 'dep', 'lemma'))
+st.write("# Welcome to MusaddiqueHussain LABS! 👋")
 
-st.write('You selected:', option)
+st.markdown(
+        """
+        MusaddiqueHussainLabs is a comprehensive Natural Language Processing (NLP) library designed to offer state-of-the-art functionality for various NLP tasks. This Python package provides a range of tools and functionalities aimed at facilitating NLP tasks, document analysis, and text preprocessing.
 
-import streamlit as st
+        **👈 Select a demo from the menu on the left** to see some examples
+        of what MusaddiqueHussainLabs can do!
 
-col1, col2 = st.columns(2)
+        ### Want to learn more?
 
-with col1:
-   txt_input = st.text_area(label='text_input')
+        - Jump into our [documentation](https://musaddiquehussainlabs.github.io/musaddiquehussainlabs_package/)
+        - Check out our code repo Repository [musaddiquehussainlabs](https://github.com/MusaddiqueHussainLabs/musaddiquehussainlabs_package.git)
 
-with col2:
-   json_data = st.json({"succeeded": True, "data": "cannot"})
+        ### Continuous Innovation
+
+        - Stay ahead with ongoing enhancements and additions to the Python package.
+    """
+    )
 
